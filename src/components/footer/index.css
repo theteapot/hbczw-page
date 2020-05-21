@@ -1,0 +1,10 @@
+.footer-image {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(respect-earth-logo.svg);
+  height: 30rem;
+  width: 30rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10rem;
+}

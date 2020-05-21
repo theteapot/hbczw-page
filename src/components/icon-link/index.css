@@ -1,0 +1,21 @@
+.icon-link-container {
+  background-color: gray;
+  height: 9rem;
+  width: 20rem;
+  margin: 1.25rem;
+  cursor: pointer;
+}
+
+.icon-link-container:hover {
+  filter: brightness(125%);
+  transition-duration: 1s;
+}
+
+.icon-link-header {
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.8rem;
+  position: relative;
+  top: 0px;
+}

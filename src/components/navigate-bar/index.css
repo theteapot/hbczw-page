@@ -1,0 +1,48 @@
+.navigate-bar-content {
+  padding: 1rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link-container {
+  padding: 1.5rem;
+  /* width: 10rem; */
+  /* flex-grow: 1; */
+  /* width: 2rem; */
+  /* padding: 0rem 0.8rem 0rem 0.8rem; */
+}
+
+.nav-link-list {
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-link {
+  cursor: pointer;
+  font-family: var(--body-font);
+  font-size: 1.25rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-link:hover {
+  color: var(--dark-red);
+  transition-duration: 500ms;
+}
+
+.nav-link.active {
+  color: var(--dark-red);
+}
+
+/* .nav-link.active .ink-line {
+  background-image: url("./ink-line-red.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0.8rem;
+} */
