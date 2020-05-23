@@ -6,6 +6,10 @@
   cursor: pointer;
 }
 
+.icon-link-anchor {
+  text-decoration: none;
+}
+
 .icon-link-container:hover {
   filter: brightness(125%);
   transition-duration: 1s;

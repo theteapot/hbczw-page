@@ -38,18 +38,37 @@ export default class NavigateBar extends Component {
 
   renderLinks(links) {
     return links.map((link, index, links) => {
+      // Render the logo in the center always
       if (index === Math.floor(links.length / 2)) return <Logo />;
       return this.renderLink(link);
     });
   }
 
-  renderLink({ path, label }) {
+  renderDropDown(dropdown) {
+    return (
+      <div className="dropdown-menu">
+        {dropdown.map(({ path, label }) => (
+          <div className="dropdown-link-container">
+            <NavLink className="nav-link dropdown-link" to={path}>
+              {label}
+            </NavLink>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  renderLink({ path, label, dropdown }) {
     return (
       <div className="nav-link-container">
-        <NavLink to={path} className="nav-link" activeClassName="active">
+        <NavLink
+          to={path}
+          className={`nav-link ${dropdown ? "dropdown-nav" : ""}`}
+          activeClassName="active"
+        >
           {label}
-          <div className="ink-line" />
         </NavLink>
+        {dropdown ? this.renderDropDown(dropdown) : null}
       </div>
     );
   }

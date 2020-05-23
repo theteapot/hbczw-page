@@ -7,10 +7,37 @@
 
 .nav-link-container {
   padding: 1.5rem;
-  /* width: 10rem; */
-  /* flex-grow: 1; */
-  /* width: 2rem; */
-  /* padding: 0rem 0.8rem 0rem 0.8rem; */
+}
+
+.dropdown-link-container {
+}
+.dropdown-menu {
+  position: absolute;
+  top: 125px;
+  padding: 0.5rem;
+  background-color: white;
+  visibility: hidden;
+  box-shadow: -1px 14px 14px -4px #1c1c1c;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+.dropdown-menu:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-nav:hover + .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-link {
+  color: black;
+  font-size: 1rem !important;
+  padding-bottom: 4px !important;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .nav-link-list {
@@ -19,7 +46,6 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 }
 
 .nav-link {
@@ -28,7 +54,10 @@
   font-size: 1.25rem;
   text-decoration: none;
   font-weight: bold;
+  text-transform: uppercase;
   color: black;
+  padding-bottom: 8px;
+  position: relative;
 }
 
 .nav-link:hover {
@@ -40,9 +69,41 @@
   color: var(--dark-red);
 }
 
-/* .nav-link.active .ink-line {
-  background-image: url("./ink-line-red.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 0.8rem;
-} */
+.nav-link:before,
+.nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--dark-red);
+}
+.nav-link:before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+.nav-link:after {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+}
+.nav-link:hover:before,
+.nav-link:focus:before,
+.nav-link:hover:after,
+.nav-link:focus:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.nav-link:hover:before,
+.nav-link:focus:before {
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s;
+}
+.nav-link:hover:after,
+.nav-link:focus:after {
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0s 0.2s;
+}

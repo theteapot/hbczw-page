@@ -12,7 +12,31 @@ function App() {
         <NavigateBar
           links={[
             { path: "/home", label: "Home" },
-            { path: "/projects", label: "Projects" },
+            {
+              path: "/projects",
+              label: "Projects",
+              dropdown: [
+                { path: "/projects/city-to-farm", label: "City to Farm" },
+                {
+                  path: "/projects/zero-waste-kindy",
+                  label: "Zero Waste Kindy",
+                },
+                {
+                  path: "/projects/zero-carbon-schools",
+                  label: "Zero Carbon Schools",
+                },
+                { path: "/projects/roundabout-shop", label: "Roundabout Shop" },
+                { path: "/projects/wcrc-tours", label: "WCRC Tours" },
+                {
+                  path: "/projects/transition-towns-hbc",
+                  label: "Transition Towns HBC",
+                },
+                {
+                  path: "/projects/zero-wate-events",
+                  label: "Zero Waste Events",
+                },
+              ],
+            },
             { path: "/learn", label: "Learn" },
             { path: "/take-action", label: "Take Action" },
             { path: "/news", label: "News" },
