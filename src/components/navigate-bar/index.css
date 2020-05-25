@@ -24,6 +24,7 @@
   visibility: hidden;
   box-shadow: -1px 14px 14px -4px #1c1c1c;
   opacity: 0;
+  z-index: 99;
   transition: visibility 0.3s, opacity 0.3s linear;
 }
 
