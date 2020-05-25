@@ -9,6 +9,11 @@
   padding: 1.5rem;
 }
 
+.nav-logo {
+  min-width: 8rem;
+  height: 10rem;
+}
+
 .dropdown-link-container {
 }
 .dropdown-menu {

@@ -6,8 +6,9 @@
 
 .fade-enter,
 .fade-exit {
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   transition: 0.6s ease opacity;
 }
 .fade-enter,

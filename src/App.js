@@ -1,7 +1,12 @@
 import React from "react";
 import "./App.css";
 import NavigateBar from "./components/navigate-bar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import HomePage from "./pages/home";
 import WCRCPage from "./pages/projects/wcrc";
 import Footer from "./components/footer";
@@ -13,6 +18,7 @@ import WCRCToursPage from "./pages/projects/wcrc-tours";
 import RoundaboutShopPage from "./pages/projects/roundabout";
 import ZeroWasteEventsPage from "./pages/projects/zero-waste-events";
 import TransitionTownsPage from "./pages/projects/transition-towns";
+import ProjectsPage from "./pages/projects";
 
 function App() {
   return (
@@ -62,10 +68,16 @@ function App() {
                 timeout={600}
               >
                 <Switch>
+                  <Route exact path="/">
+                    <Redirect to="/home" />
+                  </Route>
                   <Route path="/home">
                     <HomePage />
                   </Route>
                   <Route path="/projects">
+                    <Route exact path="/projects">
+                      <ProjectsPage />
+                    </Route>
                     <Route path="/projects/wcrc">
                       <WCRCPage />
                     </Route>

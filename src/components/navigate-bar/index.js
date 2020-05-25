@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./index.css";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import Logo from "../logo";
+import { ReactComponent as KoruLogo } from "./hbczw-logo-red-black.svg";
 
 export default class NavigateBar extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ export default class NavigateBar extends Component {
       this.props.links.splice(
         Math.floor(this.props.links.length / 2),
         0,
-        <Logo />
+        <KoruLogo className="nav-logo" />
       );
       this.setState({ links: this.props.links });
     }
@@ -37,9 +37,9 @@ export default class NavigateBar extends Component {
   }
 
   renderLinks(links) {
-    return links.map((link, index, links) => {
-      // Render the logo in the center always
-      if (index === Math.floor(links.length / 2)) return <Logo />;
+    return links.map((link) => {
+      // If we get a valid element, i.e. the logo component, just render it directly
+      if (React.isValidElement(link)) return link;
       return this.renderLink(link);
     });
   }
