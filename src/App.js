@@ -23,46 +23,54 @@ import LearnPage from "./pages/learn";
 import TakeActionPage from "./pages/take-action";
 import NewsPage from "./pages/news";
 import ContactPage from "./pages/contact";
+import NavigateBarMobile from "./components/navigate-bar-mobile";
 
 function App() {
+  const isMobile = window.innerWidth < 480;
+  const links = [
+    { path: "/home", label: "Home" },
+    {
+      path: "/projects",
+      label: "Projects",
+      dropdown: [
+        { path: "/projects/city-to-farm", label: "City to Farm" },
+        {
+          path: "/projects/zero-waste-kindy",
+          label: "Zero Waste Kindy",
+        },
+        {
+          path: "/projects/zero-carbon-schools",
+          label: "Zero Carbon Schools",
+        },
+        {
+          path: "/projects/roundabout-shop",
+          label: "Roundabout Shop",
+        },
+        { path: "/projects/wcrc", label: "WCRC" },
+        { path: "/projects/wcrc-tours", label: "WCRC Tours" },
+        {
+          path: "/projects/transition-towns-hbc",
+          label: "Transition Towns HBC",
+        },
+        {
+          path: "/projects/zero-waste-events",
+          label: "Zero Waste Events",
+        },
+      ],
+    },
+    { path: "/learn", label: "Learn" },
+    { path: "/take-action", label: "Take Action" },
+    { path: "/news", label: "News" },
+    { path: "/contact", label: "Contact" },
+  ];
   return (
     <Router>
       <div className="main-background">
-        <NavigateBar
-          links={[
-            { path: "/home", label: "Home" },
-            {
-              path: "/projects",
-              label: "Projects",
-              dropdown: [
-                { path: "/projects/city-to-farm", label: "City to Farm" },
-                {
-                  path: "/projects/zero-waste-kindy",
-                  label: "Zero Waste Kindy",
-                },
-                {
-                  path: "/projects/zero-carbon-schools",
-                  label: "Zero Carbon Schools",
-                },
-                { path: "/projects/roundabout-shop", label: "Roundabout Shop" },
-                { path: "/projects/wcrc", label: "WCRC" },
-                { path: "/projects/wcrc-tours", label: "WCRC Tours" },
-                {
-                  path: "/projects/transition-towns-hbc",
-                  label: "Transition Towns HBC",
-                },
-                {
-                  path: "/projects/zero-waste-events",
-                  label: "Zero Waste Events",
-                },
-              ],
-            },
-            { path: "/learn", label: "Learn" },
-            { path: "/take-action", label: "Take Action" },
-            { path: "/news", label: "News" },
-            { path: "/contact", label: "Contact" },
-          ]}
-        />
+        {isMobile ? (
+          <NavigateBarMobile links={links} />
+        ) : (
+          <NavigateBar links={links} />
+        )}
         <Route
           render={({ location }) => (
             <TransitionGroup>
@@ -126,7 +134,7 @@ function App() {
           )}
         />
       </div>
-      <Footer />
+      {!isMobile && <Footer />}
     </Router>
   );
 }

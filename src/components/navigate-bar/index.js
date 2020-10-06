@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./index.css";
 import PropTypes from "prop-types";
-import { NavLink } from "react-router-dom";
 import { ReactComponent as Logo } from "../../img/hbc-flower.svg";
+import Link from "../link";
 
 export default class NavigateBar extends Component {
   constructor(props) {
@@ -40,37 +40,10 @@ export default class NavigateBar extends Component {
     return links.map((link) => {
       // If we get a valid element, i.e. the logo component, just render it directly
       if (React.isValidElement(link)) return link;
-      return this.renderLink(link);
+      return (
+        <Link label={link.label} dropdown={link.dropdown} path={link.path} />
+      );
     });
-  }
-
-  renderDropDown(dropdown) {
-    return (
-      <div className="dropdown-menu">
-        {dropdown.map(({ path, label }) => (
-          <div className="dropdown-link-container">
-            <NavLink className="nav-link dropdown-link" to={path}>
-              {label}
-            </NavLink>
-          </div>
-        ))}
-      </div>
-    );
-  }
-
-  renderLink({ path, label, dropdown }) {
-    return (
-      <div className="nav-link-container">
-        <NavLink
-          to={path}
-          className={`nav-link ${dropdown ? "dropdown-nav" : ""}`}
-          activeClassName="active"
-        >
-          {label}
-        </NavLink>
-        {dropdown ? this.renderDropDown(dropdown) : null}
-      </div>
-    );
   }
 }
 

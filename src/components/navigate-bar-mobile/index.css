@@ -1,0 +1,27 @@
+.mobile-nav-bar-content {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.mobile-nav-bar-header {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.mobile-nav-bar-bottom-padding {
+  padding-bottom: 3.5rem;
+}
+
+.mobile-nav-bar-link-list {
+  background-color: white;
+  box-shadow: -1px 14px 14px -4px #1c1c1c;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
