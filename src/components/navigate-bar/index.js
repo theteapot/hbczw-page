@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./index.css";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import { ReactComponent as KoruLogo } from "./hbc-flower-2.svg";
+import { ReactComponent as Logo } from "../../img/hbc-flower.svg";
 
 export default class NavigateBar extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ export default class NavigateBar extends Component {
       this.props.links.splice(
         Math.floor(this.props.links.length / 2),
         0,
-        <KoruLogo className="nav-logo" />
+        <Logo className="nav-logo" />
       );
       this.setState({ links: this.props.links });
     }

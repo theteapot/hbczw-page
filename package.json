@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && scp -r build/* root@whanga-recycling-centre.co.nz:/var/www/hibiscuscoastzerowaste.co.nz"
+    "deploy": "npm run build && scp -r build/* root@hibiscuscoastzerowaste.co.nz:/var/www/hibiscuscoastzerowaste.co.nz"
   },
   "eslintConfig": {
     "extends": "react-app"
