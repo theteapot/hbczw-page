@@ -10,7 +10,12 @@ export default class BodyText extends Component {
   }
 
   render() {
-    return <div className="body-text-content">{this.text}</div>;
+    return (
+      <div className="body-text-content">
+        {this.text}
+        {this.props.children}
+      </div>
+    );
   }
 }
 

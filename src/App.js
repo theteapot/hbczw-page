@@ -19,6 +19,10 @@ import RoundaboutShopPage from "./pages/projects/roundabout";
 import ZeroWasteEventsPage from "./pages/projects/zero-waste-events";
 import TransitionTownsPage from "./pages/projects/transition-towns";
 import ProjectsPage from "./pages/projects";
+import LearnPage from "./pages/learn";
+import TakeActionPage from "./pages/take-action";
+import NewsPage from "./pages/news";
+import ContactPage from "./pages/contact";
 
 function App() {
   return (
@@ -63,9 +67,9 @@ function App() {
           render={({ location }) => (
             <TransitionGroup>
               <CSSTransition
-                key={location.pathname}
-                classNames="fade"
-                timeout={600}
+              // key={location.pathname}
+              // classNames="fade"
+              // timeout={600}
               >
                 <Switch>
                   <Route exact path="/">
@@ -105,16 +109,16 @@ function App() {
                   </Route>
 
                   <Route path="/learn">
-                    <div></div>
+                    <LearnPage />
                   </Route>
                   <Route path="/take-action">
-                    <div></div>
+                    <TakeActionPage />
                   </Route>
                   <Route path="/news">
-                    <div></div>
+                    <NewsPage />
                   </Route>
                   <Route path="/contact">
-                    <div></div>
+                    <ContactPage />
                   </Route>
                 </Switch>
               </CSSTransition>

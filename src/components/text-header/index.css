@@ -1,7 +1,7 @@
 .text-header {
   font-family: var(--display-font);
   font-size: 2rem;
-  color: var(--dark-red);
+  color: var(--primary-color);
   font-weight: bold;
   margin-top: 2rem;
 }

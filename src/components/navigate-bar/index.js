@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./index.css";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import { ReactComponent as KoruLogo } from "./hbczw-logo-red-black.svg";
+import { ReactComponent as KoruLogo } from "./hbc-flower-2.svg";
 
 export default class NavigateBar extends Component {
   constructor(props) {

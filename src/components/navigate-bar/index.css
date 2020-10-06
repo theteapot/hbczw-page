@@ -67,12 +67,12 @@
 }
 
 .nav-link:hover {
-  color: var(--dark-red);
+  color: var(--primary-color);
   transition-duration: 500ms;
 }
 
 .nav-link.active {
-  color: var(--dark-red);
+  color: var(--primary-color);
 }
 
 .nav-link:before,
@@ -83,7 +83,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background-color: var(--dark-red);
+  background-color: var(--primary-color);
 }
 .nav-link:before {
   opacity: 0;

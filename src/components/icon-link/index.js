@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import placeholder from "../../img/placeholder.jpg";
 
 import "./index.css";
 export default class IconLink extends Component {
@@ -9,6 +10,7 @@ export default class IconLink extends Component {
     this.header = this.props.header;
     this.image = this.props.image;
     this.to = this.props.to;
+    this.image = this.props.image || placeholder;
 
     this.state = {};
   }
@@ -16,7 +18,13 @@ export default class IconLink extends Component {
   render() {
     return (
       <Link className="icon-link-anchor" to={this.to}>
-        <div className="icon-link-container">
+        <div
+          className="icon-link-container"
+          style={{
+            backgroundImage: `url(${this.image})`,
+            backgroundSize: "cover",
+          }}
+        >
           <div className="icon-link-header">{this.header}</div>
         </div>
       </Link>

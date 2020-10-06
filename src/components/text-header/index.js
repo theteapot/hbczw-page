@@ -10,7 +10,7 @@ export default class TextHeader extends Component {
   }
 
   render() {
-    return <div className="text-header">{this.header}</div>;
+    return <div className="text-header">{this.props.children}</div>;
   }
 }
 

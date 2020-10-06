@@ -1,7 +1,7 @@
 :root {
   --display-font: "Special Elite", Arial;
   --body-font: "Raleway", Sans;
-  --dark-red: #920000;
+  --primary-color: #018e74ff;
 }
 
 .fade-enter,
