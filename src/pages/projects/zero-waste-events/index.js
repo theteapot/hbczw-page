@@ -5,7 +5,7 @@ import HeroImage from "../../../components/hero-image";
 import TextHeader from "../../../components/text-header";
 import TextBlock from "../../../components/text-block";
 import BodyText from "../../../components/body-text";
-import zeroWasteEvents from "../../../img/zero-waste-events.jpg";
+import zeroWasteEvents from "../../../img/BAF_Volunteers_2.jpg";
 
 export default class ZeroWasteEventsPage extends Component {
   render() {
@@ -15,6 +15,7 @@ export default class ZeroWasteEventsPage extends Component {
           headerFirstLine={"ZERO WASTE EVENTS, how we can help you"}
           headerSecondLine={"get your message out"}
           image={zeroWasteEvents}
+          backgroundPosition='0% 40%'
         />
         <TextBlock>
           <TextHeader>Zero Waste Events</TextHeader>

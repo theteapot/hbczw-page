@@ -10,6 +10,7 @@ export default class HeroImage extends Component {
     this.headerSecondLine = this.props.headerSecondLine;
     this.image = this.props.image || placeholder;
     this.dark = this.props.dark;
+    this.backgroundPosition = this.props.backgroundPosition || 'center'
     this.state = {};
   }
 
@@ -18,6 +19,7 @@ export default class HeroImage extends Component {
       <div
         style={{
           backgroundImage: `url(${this.image})`,
+          backgroundPosition: this.backgroundPosition,
           backgroundSize: "cover",
           color: this.dark ? "black" : "white",
         }}

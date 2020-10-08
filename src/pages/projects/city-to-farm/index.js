@@ -5,7 +5,7 @@ import HeroImage from "../../../components/hero-image";
 import TextHeader from "../../../components/text-header";
 import TextBlock from "../../../components/text-block";
 import BodyText from "../../../components/body-text";
-import cityToFarm from "../../../img/city-to-farm.jpg";
+import cityToFarm from "../../../img/NZ_Gardener.jpg";
 
 export default class CityToFarmPage extends Component {
   render() {
@@ -15,6 +15,7 @@ export default class CityToFarmPage extends Component {
           headerFirstLine={"CITY TO FARM, where we"}
           headerSecondLine={"close the loop"}
           image={cityToFarm}
+          backgroundPosition='0% 20%'
         />
         <TextBlock>
           <TextHeader>

@@ -5,7 +5,7 @@ import HeroImage from "../../../components/hero-image";
 import TextHeader from "../../../components/text-header";
 import TextBlock from "../../../components/text-block";
 import BodyText from "../../../components/body-text";
-import kindergarten from "../../../img/kindergarten.jpg";
+import kindergarten from "../../../img/Folkestone2.jpeg";
 
 export default class KindyPage extends Component {
   render() {
@@ -15,6 +15,7 @@ export default class KindyPage extends Component {
           headerFirstLine={"ZERO WASTE KINDY, where we"}
           headerSecondLine={"prepare for the future"}
           image={kindergarten}
+          backgroundPosition='0% 75%'
         />
         <TextBlock>
           <TextHeader>Zero Waste Kindy Project</TextHeader>

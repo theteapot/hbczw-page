@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import IconLink from "../../components/icon-link";
 
-import cityToFarm from "../../img/city-to-farm.jpg";
-import kindergarten from "../../img/kindergarten.jpg";
+import cityToFarm from "../../img/NZ_Gardener.jpg";
+import kindergarten from "../../img/Folkestone2.jpeg";
 import school from "../../img/school.jpg";
 import shop from "../../img/shop.jpg";
 import transitionTowns from "../../img/transition-towns.jpg";
 import whangaparaoa2 from "../../img/whangaparaoa-2.jpg";
 import whangaparaoa from "../../img/whangaparaoa.jpg";
-import zeroWasteEvents from "../../img/zero-waste-events.jpg";
+import zeroWasteEvents from "../../img/BAF_Volunteers_2.jpg";
 
 export default class ProjectsPage extends Component {
   render() {
