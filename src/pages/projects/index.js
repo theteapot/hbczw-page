@@ -4,7 +4,7 @@ import IconLink from "../../components/icon-link";
 import cityToFarm from "../../img/NZ_Gardener.jpg";
 import kindergarten from "../../img/Folkestone2.jpeg";
 import school from "../../img/school.jpg";
-import shop from "../../img/shop.jpg";
+import shop from "../../img/shop-blueprint.png";
 import transitionTowns from "../../img/transition-towns.jpg";
 import whangaparaoa2 from "../../img/whangaparaoa-2.jpg";
 import whangaparaoa from "../../img/whangaparaoa.jpg";
@@ -26,7 +26,7 @@ export default class ProjectsPage extends Component {
           image={kindergarten}
         />
         <IconLink
-          header="Zero Carbon Schools"
+          header="Zero Waste Zero Carbon in Schools"
           to="/projects/zero-carbon-schools"
           image={school}
         />

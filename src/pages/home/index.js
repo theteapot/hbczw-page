@@ -20,14 +20,9 @@ export default class HomePage extends Component {
         <ProjectsPage />
 
         <TextBlock>
-          <TextHeader>Our Mission</TextHeader>
-          <BodyText text="Zero Waste Network represents community enterprises across Aotearoa New Zealand who are working towards zero waste. Our mission is connect, educate, enable and inspire them to reach their goals and to be a unifying voice at local, regional and central government levels" />
-          <TextHeader>Our Vision</TextHeader>
-          <BodyText text="Zero Waste Network represents community enterprises across Aotearoa New Zealand who are working towards zero waste. Our mission is connect, educate, enable and inspire them to reach their goals and to be a unifying voice at local, regional and central government levels" />
-          <TextHeader>Our Story</TextHeader>
-          <BodyText text="Zero Waste Network represents community enterprises across Aotearoa New Zealand who are working towards zero waste. Our mission is connect, educate, enable and inspire them to reach their goals and to be a unifying voice at local, regional and central government levels" />
-          <TextHeader>Our Members</TextHeader>
-          <BodyText text="Zero Waste Network represents community enterprises across Aotearoa New Zealand who are working towards zero waste. Our mission is connect, educate, enable and inspire them to reach their goals and to be a unifying voice at local, regional and central government levels" />
+          <TextHeader>Who We Are</TextHeader>
+          <BodyText>Hibiscus Coast Zero Waste is a community enterprise- a for-profit organisation where the profits (if any) go back into the community in the form of new jobs and site improvements, not shareholder pockets.</BodyText>
+          <BodyText>HCZW is a local, charitable, community trust that works closely with E-Cycle, a nation-wide electronic waste recycling business. </BodyText>
         </TextBlock>
       </div>
     );

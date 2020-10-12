@@ -40,7 +40,7 @@ function App() {
         },
         {
           path: "/projects/zero-carbon-schools",
-          label: "Zero Carbon Schools",
+          label: "Zero Waste Zero Carbon in Schools",
         },
         {
           path: "/projects/roundabout-shop",
@@ -69,8 +69,8 @@ function App() {
         {isMobile ? (
           <NavigateBarMobile links={links} />
         ) : (
-          <NavigateBar links={links} />
-        )}
+            <NavigateBar links={links} />
+          )}
         <Route
           render={({ location }) => (
             <TransitionGroup>

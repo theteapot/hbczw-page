@@ -5,7 +5,7 @@ import HeroImage from "../../../components/hero-image";
 import TextHeader from "../../../components/text-header";
 import TextBlock from "../../../components/text-block";
 import BodyText from "../../../components/body-text";
-import shop from "../../../img/shop.jpg";
+import shop from "../../../img/shop-blueprint.png";
 
 export default class RoundaboutShopPage extends Component {
   render() {
@@ -15,6 +15,7 @@ export default class RoundaboutShopPage extends Component {
           headerFirstLine={"ROUNDABOUT SHOP, where you can"}
           headerSecondLine={"upcycle your life"}
           image={shop}
+          backgroundPosition="0% 30%"
         />
         <TextBlock>
           <TextHeader>The Roundabout Shop"</TextHeader>

@@ -1,0 +1,52 @@
+.waste-block {
+    font-family: "Ubuntu";
+    margin: 1rem;
+  }
+  
+  .waste-block-title {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
+  
+  .waste-block-subtitle {
+    color: var(--light-blue);
+    font-weight: bold;
+  }
+  
+  .waste-block ul {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .waste-table-container {
+    background-color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .waste-table {
+      font-family: var(--body-font);
+    width: 90%;
+    font-size: 1.25rem;
+    border-collapse: collapse;
+  }
+  
+  .waste-table thead {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+  }
+  
+  .waste-table thead tr td {
+    padding: 0.75rem;
+  }
+  
+  .waste-table tbody tr {
+    border-bottom: solid 1px var(--primary-color);
+  }
+  
+  .waste-table tbody tr td {
+    padding: 0.75rem;
+  }
+  

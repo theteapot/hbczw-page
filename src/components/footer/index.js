@@ -6,7 +6,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="footer-image">
-        <FooterLogo color="green" />
+        {/* <FooterLogo color="green" /> */}
       </div>
     );
   }

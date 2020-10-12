@@ -16,7 +16,8 @@ export default class ContactPage extends Component {
         />
         <TextBlock>
           <TextHeader>Contact Us</TextHeader>
-          <BodyText>Here is where contact information will go</BodyText>
+          <BodyText>Give us a call:
+             <div>Betsy Kettle 021 0826 8196</div></BodyText>
         </TextBlock>
       </div>
     );
