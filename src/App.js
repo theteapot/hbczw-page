@@ -36,15 +36,15 @@ function App() {
         { path: "/projects/city-to-farm", label: "City to Farm" },
         {
           path: "/projects/zero-waste-kindy",
-          label: "Zero Waste Kindy",
+          label: "Zero Waste Kindy and ECE",
         },
         {
           path: "/projects/zero-carbon-schools",
           label: "Zero Waste Zero Carbon in Schools",
         },
         {
-          path: "/projects/roundabout-shop",
-          label: "Roundabout Shop",
+          path: "/projects/ecoshop",
+          label: "Ecoshop",
         },
         { path: "/projects/wcrc", label: "WCRC" },
         { path: "/projects/wcrc-tours", label: "WCRC Tours" },
@@ -69,8 +69,8 @@ function App() {
         {isMobile ? (
           <NavigateBarMobile links={links} />
         ) : (
-            <NavigateBar links={links} />
-          )}
+          <NavigateBar links={links} />
+        )}
         <Route
           render={({ location }) => (
             <TransitionGroup>
@@ -102,7 +102,7 @@ function App() {
                     <Route path="/projects/zero-carbon-schools">
                       <SchoolsPage />
                     </Route>
-                    <Route path="/projects/roundabout-shop">
+                    <Route path="/projects/ecoshop">
                       <RoundaboutShopPage />
                     </Route>
                     <Route path="/projects/wcrc-tours">

@@ -4,7 +4,7 @@ import IconLink from "../../components/icon-link";
 import cityToFarm from "../../img/NZ_Gardener.jpg";
 import kindergarten from "../../img/Folkestone2.jpeg";
 import school from "../../img/school.jpg";
-import shop from "../../img/shop-blueprint.png";
+import shop from "../../img/ecoshop-opening.jpg";
 import transitionTowns from "../../img/transition-towns.jpg";
 import whangaparaoa2 from "../../img/whangaparaoa-2.jpg";
 import whangaparaoa from "../../img/whangaparaoa.jpg";
@@ -16,12 +16,12 @@ export default class ProjectsPage extends Component {
       <div className="wrapping-box">
         <IconLink header="WCRC" to="/projects/wcrc" image={whangaparaoa} />
         <IconLink
-          header="City to Farm Composting"
+          header="City to Farm Food Cycle"
           to="/projects/city-to-farm"
           image={cityToFarm}
         />
         <IconLink
-          header="Zero Waste Kindy"
+          header="Zero Waste Kindy and ECE"
           to="/projects/zero-waste-kindy"
           image={kindergarten}
         />
@@ -30,11 +30,7 @@ export default class ProjectsPage extends Component {
           to="/projects/zero-carbon-schools"
           image={school}
         />
-        <IconLink
-          header="Roundabout Shop"
-          to="/projects/roundabout-shop/"
-          image={shop}
-        />
+        <IconLink header="Ecoshop" to="/projects/ecoshop/" image={shop} />
         <IconLink
           header="WCRC Tours"
           to="/projects/wcrc-tours/"

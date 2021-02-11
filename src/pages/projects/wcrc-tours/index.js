@@ -5,7 +5,7 @@ import HeroImage from "../../../components/hero-image";
 import TextHeader from "../../../components/text-header";
 import TextBlock from "../../../components/text-block";
 import BodyText from "../../../components/body-text";
-import whangaparaoa2 from "../../../img/whangaparaoa-2.jpg";
+import tour from "../../../img/kindy-tour.jpg";
 
 export default class WCRCToursPage extends Component {
   render() {
@@ -16,7 +16,7 @@ export default class WCRCToursPage extends Component {
             "whangaparaoa COMMUNITY RECYCLING CENTRE, let us show you"
           }
           headerSecondLine={"how we can help"}
-          image={whangaparaoa2}
+          image={tour}
         />
         <TextBlock>
           <TextHeader>School and Community Tours of the WCRC</TextHeader>

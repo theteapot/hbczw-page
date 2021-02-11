@@ -5,7 +5,7 @@ import HeroImage from "../../../components/hero-image";
 import TextHeader from "../../../components/text-header";
 import TextBlock from "../../../components/text-block";
 import BodyText from "../../../components/body-text";
-import school from "../../../img/school.jpg";
+import school from "../../../img/zwc-in-schools.png";
 
 export default class SchoolsPage extends Component {
   render() {

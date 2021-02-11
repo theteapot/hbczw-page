@@ -15,12 +15,10 @@ export default class CityToFarmPage extends Component {
           headerFirstLine={"CITY TO FARM, where we"}
           headerSecondLine={"close the loop"}
           image={cityToFarm}
-          backgroundPosition='0% 20%'
+          backgroundPosition="0% 20%"
         />
         <TextBlock>
-          <TextHeader>
-            The City to Farm Local Food Resilience Project
-          </TextHeader>
+          <TextHeader>The City to Farm Food Cycle</TextHeader>
           <BodyText>
             Our current Agriculture system burns large amounts of fossil fuels
             to manufacture fertilizers and run agricultural machinery. But its
