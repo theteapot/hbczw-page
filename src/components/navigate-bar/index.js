@@ -9,7 +9,7 @@ export default class NavigateBar extends Component {
     super(props);
 
     this.state = {
-      links: props.links || [],
+      links: [],
     };
   }
 
@@ -39,10 +39,13 @@ export default class NavigateBar extends Component {
   renderLinks(links) {
     return links.map((link) => {
       // If we get a valid element, i.e. the logo component, just render it directly
-      if (React.isValidElement(link)) return link;
-      return (
-        <Link label={link.label} dropdown={link.dropdown} path={link.path} />
-      );
+      if (React.isValidElement(link)) {
+        return link;
+      } else {
+        return (
+          <Link label={link.label} dropdown={link.dropdown} path={link.path} />
+        );
+      }
     });
   }
 }
